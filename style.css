@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap');
+body, ul, li{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', 'sans-serif';
+    color: #d0d0d0;
+    background-color: #07080d;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    transition: color .5s;
+}
+article{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.wrapper{
+    width: 100%;
+}
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+header{
+    position: fixed;
+    background-color: #07080d;
+    z-index: 1000;
+}
+.article_gif{
+    border-radius: 40%;
+    border: 3px solid white;
+    box-shadow: 5px 5px 3px #bebdbd;
+    margin-left: 175px;
+    height: 500px;
+    width: 500px;
+}
+nav{
+    padding: 35px 0 10px;
+}
+nav > ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 21px
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100dvh;
+    margin-bottom: 50px
+}
+.intro{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.intro > article{
+    width: 600px;
+}
+.intro > span{
+    font-size: 24px;
+    font-style: italic;
+}
+.intro h1 span{
+    display: block;
+    font-size: 108.184px;
+    margin: 0;
+    line-height: 1;
+    font-style: normal;
+}
+.intro p{
+    color: rgba(208, 208, 208, 0.7);
+}
+.intro > img{
+    width: 40%;
+    object-fit: contain;
+    align-self: flex-end;
+}
+.ivan{
+    transform: translateX(-100%);
+}
+.lobur{
+    transform: translateX(250%);
+}
+.ivan, .lobur{
+    opacity: 0;
+    animation: normalPosition 1s ease-out forwards;
+}
+.info_skils > h2{
+    font-size: 42px;
+    text-transform: uppercase;
+    width: fit-content;
+    margin: 0 auto;
+}
+.info_skils > h2 > span{
+    display: block;
+}
+.info_skils > h2 > span:nth-child(1), .info_skils > h2 > span:nth-child(3){
+    transform: translateX(100px);
+}
+.info_skils > h2 > span:nth-child(2){
+    transform: translateX(-65px);
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.info_div_1 img{
+    margin-top: 70px;
+    width: 400px;
+}
+.info_div p{
+    margin-left: 30px;
+    padding: 10px;
+}
+.info > div{
+    margin-top: 40px;
+    height: 400px;
+    border: 4px solid darkslategray;
+    box-shadow: 1px 1px 10px darkslategray;
+    border-radius: 25px;
+    width: 400px;
+}
+.hero{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 35px;
+    margin: 10px 10px 20px;
+    background-color: darkslategray;
+    border-radius: 20px;
+    flex-direction: column;
+}
+.hero img{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 6px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+.hero p{
+    color: #07080d;
+    margin-bottom: 30px;
+}
+.social-icons{
+    cursor: pointer;
+    color: gold;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.social-icons i:hover{
+    transform: scale(1.5);
+}
+.btn_links{
+    margin: 0px 5px;
+    transform: 0.5s;
+}
+.btn{
+    text-decoration: none;
+    border: 3px solid #07080d;
+    padding: 10px 25px;
+    border-radius: 25px;
+}
+.btn:hover{
+    text-decoration: none;
+    background-color: #a9b6f5;
+    color: #07080d;
+}
+.info_div_1_img{
+    background-image: url(./glowing-spaceship-orbits-planet-in-starry-galaxy-generated-by-ai_188544-9655.avif);
+}
+.info_div_1{
+    backdrop-filter: blur(3px);
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+}
+.info b{
+    font-size: 20px;
+    color: #a9b6f5;
+}
+.info_p_img{
+    background-image: url(./glowing-spaceship-orbits-planet-in-starry-galaxy-generated-by-ai_188544-9655.avif);
+}
+.info_p{
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+    backdrop-filter: blur(3px);
+}
+.info_p_img_2{
+    background-image: url(./glowing-satellite-orbits-planet-star-filled-galaxy-generated-by-ai_188544-9664.avif);
+}
+.info_div{
+    backdrop-filter: blur(3px);
+    border-radius: 30px;
+    width: 400px;
+    height: 400px;
+}
+.info_p p{
+    margin-top: 30px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+.info h3{
+    padding-top: 20px;
+    text-align: center;
+}
+.slils{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+.slils > span{
+    width: 30%;
+    font-size: 21px;
+}
+.slils > p{
+    margin: 0;
+    width: 70%;
+    font-size: 14px;
+}
+.experience_education{
+    width: auto;
+}
+.experience_education > h2{
+    font-size: 42px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.experience_education > p{
+    text-align: center;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.info > div{
+    width: 600px;
+}
+.info ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.info li{
+    margin-bottom: 20px;
+}
+.accordion{
+    width: 1200px;
+}
+.accordion-button::after{
+    background-image: url(./pngwing.com\ \(8\).png);
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url(./pngwing.com\ \(8\).png);
+    background-color: rgb(17, 0, 48)(89, 0, 255);
+}
+.accordion-button{
+    background-color: black;
+    color: white;
+}
+.accordion-body__img{
+    width: 300px;
+}
+.accordion-body{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: black;
+    align-items: center;
+}
+.accordion-body p{
+    width: 400px;
+    color: #fff;
+}
+.accordion-body strong{
+    color: white;
+}
+.accordion-button:not(.collapsed) {
+    background-color: rgb(102, 98, 97);
+}
+.accordion-button:focus{
+    box-shadow: 0 0 5px rgb(41, 2, 148) 28, 217;
+}
+.container_block > h2{
+    font-size: 38px;
+    text-transform: uppercase;
+}
+.contacts_block > p{
+    width: 370px;
+}
+.contacts_text{
+    transform: translateX(10vw);
+    width: fit-content;
+}
+.thanks_title{
+    transform: translateX(45vw);
+    width: fit-content;
+}
+.thanks_text{
+    transform: translateX(55vw);
+    width: fit-content;       
+}
+.contacts{
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+}
+.cv_block > button{
+    -webkit-appearance: none;
+    appearance: none;
+    display: flex;
+    border: 0;
+    border-radius: 10px;
+    padding: 15px 70px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 30px auto 50px;
+    background: rgba(239, 239, 239, 1);
+    transition: .5s;
+}
+.cv_block > button:hover{
+    background: rgba(239, 239, 239, .7);
+}
+@keyframes normalPosition {
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@media screen and (width < 768px){
+    #intro{
+        padding-top: 100px;
+        height: calc(100vh - 100px);
+        flex-direction: column;
+    }
+    .intro > .article{
+        width: auto;
+    }
+    .intro > img{
+        align-items: center;
+    }
+}
+@media screen and (width < 620px) {
+    header > .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav{
+        display: none;
+    }
+    #burger_menu{
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: inherit;
+        padding: 35px 0 10px;
+        transition: color .5s;
+    }
+    #burger_menu:hover{
+        color: white;
+    }
+}
